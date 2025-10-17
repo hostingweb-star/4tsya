@@ -1,0 +1,231 @@
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Basis Data — Tasya Dwi Cahyani</title>
+  <style>
+    :root {
+      --pink: #d63384;
+      --purple: #6f42c1;
+      --bg1: #ffe6f9;
+      --bg2: #f3e5f5;
+      --light: #f8bbd0;
+      --text: #333;
+      --radius: 18px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, var(--bg1), var(--bg2));
+      color: var(--text);
+      display: flex;
+      justify-content: center;
+      padding: 30px 15px;
+    }
+
+    .wrap {
+      width: 100%;
+      max-width: 900px;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--pink), var(--purple));
+      color: white;
+      text-align: center;
+      border-radius: var(--radius);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+      padding: 25px;
+      margin-bottom: 25px;
+    }
+
+    header h1 {
+      font-family: "Dancing Script", cursive;
+      font-size: 42px;
+      text-shadow: 2px 2px 0 #ff0095, -2px -2px 0 #a64ca6;
+      margin-bottom: 12px;
+    }
+
+    .avatar {
+      width: 130px;
+      height: 130px;
+      border-radius: 16px;
+      overflow: hidden;
+      margin: 10px auto;
+      border: 3px solid rgba(255,255,255,0.7);
+      box-shadow: 0 0 20px rgba(255,255,255,0.4);
+    }
+
+    .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .meta p {
+      margin: 6px 0;
+      color: #fff3fa;
+      font-weight: 500;
+    }
+
+    main {
+      margin-top: 10px;
+    }
+
+    .post {
+      background: #fff;
+      border-radius: var(--radius);
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .post:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .post h2 {
+      color: var(--pink);
+      border-left: 5px solid var(--purple);
+      padding-left: 10px;
+      margin-bottom: 10px;
+    }
+
+    .post p, .post li {
+      color: #444;
+      line-height: 1.6;
+      font-size: 15px;
+    }
+
+    .post ul {
+      margin: 10px 0;
+      padding-left: 25px;
+    }
+
+    /* Gambar Post 1 */
+    .img-container {
+      text-align: center;
+      margin: 18px 0;
+    }
+
+    .img-container img {
+      max-width: 80%;
+      border-radius: 12px;
+      box-shadow: 0 0 25px rgba(214, 51, 132, 0.25);
+      border: 2px solid rgba(214, 51, 132, 0.15);
+      transition: transform 0.3s ease;
+    }
+
+    .img-container img:hover {
+      transform: scale(1.04);
+      box-shadow: 0 0 30px rgba(214, 51, 132, 0.35);
+    }
+
+    .img-caption {
+      font-size: 12px;
+      color: #777;
+      font-style: italic;
+      margin-top: 6px;
+    }
+
+    .hero {text-align: center;margin-top: 20px;}
+    .hero iframe {
+      width: 100%;
+      max-width: 720px;
+      height: 405px;
+      border-radius: 12px;
+      border: none;}
+
+    footer {
+      background: linear-gradient(135deg, var(--purple), var(--pink));
+      color: white;
+      text-align: center;
+      padding: 15px;
+      border-radius: var(--radius);
+      margin-top: 25px;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: #ffe6f9;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media(max-width:700px) {
+      header { padding: 20px; }
+      .avatar { width: 100px; height: 100px; }
+      header h1 { font-size: 36px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>✨ Blog Basis Data ✨</h1>
+      <div class="avatar">
+        <img src="image1.png" alt="Foto Tasya Dwi Cahyani">
+      </div>
+      <div class="meta">
+        <p>🌸 Nama: <strong>Tasya Dwi Cahyani</strong></p>
+        <p>🌷 NIM: <strong>24416255201252</strong></p>
+        <p>💐 Email: <strong>if24.tasyacahyani@mhs.ubpkarawang.ac.id</strong></p>
+        <p>🍒 Universitas Buana Perjuangan Karawang 🍒</p>
+      </div>
+    </header>
+
+      <article class="post">
+        <h2>Post 1 : Contoh 5 Kasus Intersection</h2>
+        <h3>Mahasiswa mengambil Mata Kuliah</h3>
+        <div class="img-container">
+          <img src="tabel1.png" alt="Contoh relasi tabel database">
+          <p class="img-caption">Gambar: Contoh relasi tabel dengan Primary Key dan Foreign Key</p>
+        </div>
+        
+        <h3>Pegawai mengikuti Proyek</h3>
+        <div class="img-container">
+          <img src="tabel2.png" alt="Contoh relasi tabel database">
+          <p class="img-caption">Gambar: Contoh relasi tabel dengan Primary Key dan Foreign Key</p>
+        </div>
+        
+        <h3>Siswa mengikuti Ekstrakurikuler</h3>
+        <div class="img-container">
+          <img src="tabel3.png" alt="Contoh relasi tabel database">
+          <p class="img-caption">Gambar: Contoh relasi tabel dengan Primary Key dan Foreign Key</p>
+        </div>
+        
+        <h3>Supplier menyuplai Barang</h3>
+        <div class="img-container">
+          <img src="tabel4.png" alt="Contoh relasi tabel database">
+          <p class="img-caption">Gambar: Contoh relasi tabel dengan Primary Key dan Foreign Key</p>
+        </div>
+        
+        <h3>Dokter melayani Pasien</h3>
+        <div class="hero">
+            <iframe src="https://www.youtube.com/embed/SqyUI_sog28?si=nZSIy1HMOrnWq6iJ" 
+            title="YouTube video" allowfullscreen></iframe>
+        </div>
+
+    <article class="post">
+        <h2>Post 2: Apa Itu Normalisasi pada ERD?</h2>
+        <p><strong>Normalisasi</strong> adalah proses penyusunan tabel dalam database agar data tersimpan dengan efisien dan tidak terjadi pengulangan (redundansi).
+            Proses ini dilakukan setelah pembuatan ERD (Entity Relationship Diagram) untuk memastikan bahwa setiap data ditempatkan pada tabel yang tepat dan saling terhubung secara logis.</p> 
+        <ul>
+          <br>Tujuan utamanya adalah <strong>agar struktur database lebih rapi, konsisten, dan mudah dipelihara.</strong>
+        </ul>
+    </article>
+
+    <footer>
+      © 2025 Blog Basis Data | <a href="https://www.ubpkarawang.ac.id" target="_blank">UBP Karawang</a>
+    </footer>
